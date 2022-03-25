@@ -36,11 +36,11 @@ The statistical equation of masking function $$G$$ is given by
 
 
 $$
-\textnormal{projected area} = \int_{\Omega}G_1(\omega_o, \omega_m)\lang \omega_o, \omega_m \rang D(\omega_m) d\omega_m \tag{3}
+\textnormal{projected area} = \int_{\Omega}G_1(\omega_o, \omega_m)\langle \omega_o, \omega_m \rangle D(\omega_m) d\omega_m \tag{3}
 $$
 
 
-$$D(\omega_m)$$ returns the differential area oriented to direction $$\omega_m$$, the clamped dot product ($$\lang \omega_o, \omega_m \rang$$) projects the differential area to direciton $$\omega_o$$, and then times $$G_1$$ to get the fraction of visible area.
+$$D(\omega_m)$$ returns the differential area oriented to direction $$\omega_m$$, the clamped dot product ($$\langle \omega_o, \omega_m \rangle$$) projects the differential area to direciton $$\omega_o$$, and then times $$G_1$$ to get the fraction of visible area.
 
 ### 2.4 Constraint on the Masking Function
 
@@ -48,7 +48,7 @@ the projected area is acutally 1 $$m^2$$, so equation (3) can be written as
 
 
 $$
-\cos{\theta_o} = \int_{\Omega}G_1(\omega_o, \omega_m)\lang \omega_o, \omega_m \rang D(\omega_m) d\omega_m \tag{4}
+\cos{\theta_o} = \int_{\Omega}G_1(\omega_o, \omega_m)\langle \omega_o, \omega_m \rangle D(\omega_m) d\omega_m \tag{4}
 $$
 
 
@@ -64,7 +64,7 @@ Distribution of Visible Normals is the distribution of normals weighted by the p
 
 
 $$
-D_{\omega_o}(\omega_m) = \frac{G_1(\omega_o, \omega_m)\lang \omega_o, \omega_m \rang D(\omega_m)}{\cos{\theta_o}} \tag{5}
+D_{\omega_o}(\omega_m) = \frac{G_1(\omega_o, \omega_m)\langle \omega_o, \omega_m \rangle D(\omega_m)}{\cos{\theta_o}} \tag{5}
 $$
 
 
@@ -76,7 +76,7 @@ The radiance $$L(\omega_o, \omega_m)$$ of each microfacet can be expressed by th
 
 
 $$
-L(\omega_o, \omega_m) = \int_{\Omega_{i}}\rho_{\mathcal{M}}(\omega_o, \omega_i, \omega_m) \lang \omega_i, \omega_m \rang L(\omega_i) d\omega_i \tag{6}
+L(\omega_o, \omega_m) = \int_{\Omega_{i}}\rho_{\mathcal{M}}(\omega_o, \omega_i, \omega_m) \langle \omega_i, \omega_m \rangle L(\omega_i) d\omega_i \tag{6}
 $$
 
 
@@ -92,7 +92,7 @@ substitute with equation (6):
 
 
 $$
-dL(\omega_o, \mathcal{M}) = L(\omega_i)d\omega_i \int_{\Omega}\rho_{\mathcal M}(\omega_o, \omega_i, \omega_m)\lang \omega_i, \omega_m \rang D_{\omega_o}(\omega_m)d\omega_m \tag{8}
+dL(\omega_o, \mathcal{M}) = L(\omega_i)d\omega_i \int_{\Omega}\rho_{\mathcal M}(\omega_o, \omega_i, \omega_m)\langle \omega_i, \omega_m \rangle D_{\omega_o}(\omega_m)d\omega_m \tag{8}
 $$
 
 
@@ -108,7 +108,7 @@ so
 
 
 $$
-\rho(\omega_o, \omega_i) = \frac{1}{\cos{\theta_o}\cos{\theta_i}}\int_{\Omega}\rho_{\mathcal M}(\omega_o, \omega_i, \omega_m)\lang \omega_o, \omega_m \rang \lang \omega_i, \omega_m \rang G_1(\omega_o, \omega_m)D(\omega_m)d\omega_m \tag{10}
+\rho(\omega_o, \omega_i) = \frac{1}{\cos{\theta_o}\cos{\theta_i}}\int_{\Omega}\rho_{\mathcal M}(\omega_o, \omega_i, \omega_m)\langle \omega_o, \omega_m \rangle \langle \omega_i, \omega_m \rangle G_1(\omega_o, \omega_m)D(\omega_m)d\omega_m \tag{10}
 $$
 
 
@@ -116,7 +116,7 @@ but this equation only describes single scattering in microsurface, multiple bou
 
 
 $$
-\rho(\omega_o, \omega_i) = \frac{1}{|\omega_g \cdot \omega_o||\omega_g \cdot \omega_i|}\int_{\Omega}\rho_{\mathcal M}(\omega_o, \omega_i, \omega_m)\lang \omega_o, \omega_m \rang \lang \omega_i, \omega_m \rang G_2(\omega_o, \omega_i, \omega_m)D(\omega_m)d\omega_m \tag{11}
+\rho(\omega_o, \omega_i) = \frac{1}{|\omega_g \cdot \omega_o||\omega_g \cdot \omega_i|}\int_{\Omega}\rho_{\mathcal M}(\omega_o, \omega_i, \omega_m)\langle \omega_o, \omega_m \rangle \langle \omega_i, \omega_m \rangle G_2(\omega_o, \omega_i, \omega_m)D(\omega_m)d\omega_m \tag{11}
 $$
 
 
@@ -137,7 +137,7 @@ substitude into equation (11), we arrive at
 
 
 $$
-\rho(\omega_o, \omega_i) = \frac{1}{|\omega_g \cdot \omega_o||\omega_g \cdot \omega_i|}\int_{\Omega}\frac{F(\omega_o, \omega_h)\delta_{\omega_h}(\omega_m)}{4 |\omega_i \cdot \omega_h |^{2}}\lang \omega_o, \omega_m \rang \lang \omega_i, \omega_m \rang G_2(\omega_o, \omega_i, \omega_m)D(\omega_m)d\omega_m \tag{13}
+\rho(\omega_o, \omega_i) = \frac{1}{|\omega_g \cdot \omega_o||\omega_g \cdot \omega_i|}\int_{\Omega}\frac{F(\omega_o, \omega_h)\delta_{\omega_h}(\omega_m)}{4 |\omega_i \cdot \omega_h |^{2}}\langle \omega_o, \omega_m \rangle \langle \omega_i, \omega_m \rangle G_2(\omega_o, \omega_i, \omega_m)D(\omega_m)d\omega_m \tag{13}
 $$
 
 
