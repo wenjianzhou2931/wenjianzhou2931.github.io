@@ -10,7 +10,7 @@ mathjax: true
 
 
 $$
-L(\omega_o, \mathcal{M}) = \frac{\int_{\mathcal{M}}\textnormal{projected area}(p_m)L(\omega_o, p_m)d p_m}{\int_{\mathcal{M}}\textnormal{projected area}(p_m)d p_m} \tag{1}
+L(\omega_o, \mathcal{M}) = \frac{\int_{\mathcal{M}}\mathrm{projected \  area}(p_m)L(\omega_o, p_m)d p_m}{\int_{\mathcal{M}}\mathrm{projected \ area}(p_m)d p_m} \tag{1}
 $$
 
 
@@ -26,7 +26,7 @@ Thus the integral of $$D$$ is the area of the microsurface:
 
 
 $$
-\textnormal{microsurface area} = \int_{\mathcal{M}}dp_m = \int_{\Omega}D(\omega_m)d\omega_m \tag{2}
+\mathrm{microsurface \ area} = \int_{\mathcal{M}}dp_m = \int_{\Omega}D(\omega_m)d\omega_m \tag{2}
 $$
 
 
@@ -36,7 +36,7 @@ The statistical equation of masking function $$G$$ is given by
 
 
 $$
-\textnormal{projected area} = \int_{\Omega}G_1(\omega_o, \omega_m)\langle \omega_o, \omega_m \rangle D(\omega_m) d\omega_m \tag{3}
+\mathrm{projected \ area} = \int_{\Omega}G_1(\omega_o, \omega_m)\langle \omega_o, \omega_m \rangle D(\omega_m) d\omega_m \tag{3}
 $$
 
 
