@@ -66,3 +66,14 @@ The Smith Masking function is generally accurate even on correlated surfaces(eve
 
 This model computes the scattering on separate microsurfaces and averages their contributions. Each microsurface has only two normals $$\omega_m = (x_m, y_m, z_m)$$ and $$\omega_m' = (-x_m, -y_m, z_m)$$ (the z component should be positive or the normal will be backfacing).
 
+![v-profile](https://github.com/wenjianzhou2931/wenjianzhou2931.github.io/raw/main/images/understanding-v-profile.png)
+
+The distribution of normals is therefore:
+
+
+$$
+D(\omega) = \frac{\delta_{\omega_m}(\omega)}{2\omega_m \cdot \omega_g} + \frac{\delta_{\omega_m'}(\omega)}{2\omega_m' \cdot \omega_g}
+$$
+
+
+TO BE CONTINUED
