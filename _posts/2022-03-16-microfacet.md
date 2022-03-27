@@ -14,7 +14,7 @@ Geometric effects:
 
 
 
-![effects](https://github.com/wenjianzhou2931/wenjianzhou2931.github.io/raw/master/images/microfacet-effects.png){:.rounded}
+![effects](https://github.com/wenjianzhou2931/wenjianzhou2931.github.io/raw/main/images/microfacet-effects.png){:.rounded}
 
 
 
@@ -32,7 +32,7 @@ where $$\theta_h$$ is the angle between the normal of each microfacet and the ma
 
 
 
-![projected](https://github.com/wenjianzhou2931/wenjianzhou2931.github.io/raw/master/images/microfacet-projected.png){:.rounded}
+![projected](https://github.com/wenjianzhou2931/wenjianzhou2931.github.io/raw/main/images/microfacet-projected.png){:.rounded}
 
 
 
@@ -52,7 +52,7 @@ $$
 $$
 
 
-![G1-term](https://github.com/wenjianzhou2931/wenjianzhou2931.github.io/raw/master/images/microfacet-g-term.png){:.rounded}
+![G1-term](https://github.com/wenjianzhou2931/wenjianzhou2931.github.io/raw/main/images/microfacet-g-term.png){:.rounded}
 
 **Remember that the $$D$$ term returns the differential area of microfacets with direction $$\omega_h$$, so the product of $$\max(0, \omega \cdot \omega_h)D(\omega_h)$$ means that we project the differential area returned by $$D$$ to the viewing direction, and then times $$G_1$$ returns the visible area, which is $$\cos{\theta}$$.**
 
@@ -102,7 +102,7 @@ $$
 
 Note that the angle $$\theta_h$$ is the angle between $$\omega_h$$ and $$\omega_i$$. So that's why we need to write $$dA^{\perp}$$ as $$\cos{\theta_h}dA$$. See the figure below for more details.
 
-![angles](https://github.com/wenjianzhou2931/wenjianzhou2931.github.io/raw/master/images/microfacet-half-angle.png){:.rounded}
+![angles](https://github.com/wenjianzhou2931/wenjianzhou2931.github.io/raw/main/images/microfacet-half-angle.png){:.rounded}
 
 The differential area of microfacets with normal $$\omega_h$$ is
 
@@ -152,7 +152,7 @@ Now we are going to define the relationship between $$\omega_h$$ and $$\omega_i$
 
 Consider the spherical coordinate system oriented about $$\omega_o$$, the differential solid angles $$d\omega_i$$ and $$d\omega_h$$ are $$\sin{\theta_i}d\theta_id\phi_i$$ and $$\sin{\theta_h}d\theta_h\phi_h$$.
 
-![adjustment](https://github.com/wenjianzhou2931/wenjianzhou2931.github.io/raw/master/images/microfacet-adjustment.png){:.rounded}
+![adjustment](https://github.com/wenjianzhou2931/wenjianzhou2931.github.io/raw/main/images/microfacet-adjustment.png){:.rounded}
 
 Because $$\omega_i$$ is computed by reflecting $$\omega_o$$ about $$\omega_h$$, $$d\theta_i = 2 d\theta_h$$, $$\phi_i = \phi_h$$:
 
