@@ -117,3 +117,5 @@ $$
 For validation, we can use the normalization of the distribution of visible normals to verify.
 
 But V-cavity model has a problem, which is at grazing angles, the directions $$\omega_i$$ reflected by the V-cavity microsurface are too low on average compared to the directions $$\omega_i$$ reflected by physical surfaces.
+
+![v-problem](https://github.com/wenjianzhou2931/wenjianzhou2931.github.io/raw/main/images/understanding-v-problem.png)
