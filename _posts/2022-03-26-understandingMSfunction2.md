@@ -124,3 +124,5 @@ But V-cavity model has a problem, which is at grazing angles, the directions $$\
 
 * Heitz, Eric. "Understanding the masking-shadowing function in microfacet-based BRDFs." *Journal of Computer Graphics Techniques* 3.2 (2014): 32-91.
 
+
+
