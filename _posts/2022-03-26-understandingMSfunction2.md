@@ -76,4 +76,44 @@ D(\omega) = \frac{\delta_{\omega_m}(\omega)}{2\omega_m \cdot \omega_g} + \frac{\
 $$
 
 
-TO BE CONTINUED
+
+To derive the masking term, we use the conservation of the visible projected area:
+
+
+$$
+\begin{aligned}
+\cos{\theta_o} &= \int_{\Omega}G_1(\omega_o, \omega) \langle \omega_o, \omega \rangle D(\omega) d\omega \\
+&= \frac{1}{2}G_1(\omega_o, \omega_m)\frac{\langle \omega_o, \omega_m \rangle}{\omega_m \cdot \omega_g} + \frac{1}{2}G_1(\omega_o, \omega_m')\frac{\langle \omega_o, \omega_m' \rangle}{\omega_m' \cdot \omega_g}
+\end{aligned}
+$$
+
+
+There are two cases, the two normals are visible and there is no masking, the two $$G_1$$ functions are all equal to 1, the other case is that one normal is visible and the other is invisible, and we have:
+
+
+$$
+\cos{\theta_o} = \frac{1}{2}G_1(\omega_o, \omega_m)\frac{\langle \omega_o, \omega_m \rangle}{\omega_m \cdot \omega_g}
+$$
+
+
+solution is:
+
+
+$$
+G_1(\omega_o, \omega_m) = 2 \frac{\cos{\theta_o}(\omega_m \cdot \omega_g)}{\langle \omega_o, \omega_m \rangle}
+$$
+
+
+where the $$\cos{\theta_o}$$ can be written as $$\omega_o \cdot \omega_g$$.
+
+the result can be expressed in one formula:
+
+
+$$
+G_1(\omega_o, \omega_m) = \min(1, 2 \frac{(\omega_m \cdot \omega_g)(\omega_o \cdot \omega_g)}{\langle \omega_o, \omega_m \rangle})
+$$
+
+
+For validation, we can use the normalization of the distribution of visible normals to verify.
+
+But V-cavity model has a problem, which is at grazing angles, the directions $$\omega_i$$ reflected by the V-cavity microsurface are too low on average compared to the directions $$\omega_i$$ reflected by physical surfaces.
